@@ -45,12 +45,21 @@ header {
     width: 100%;
 }
 
-main {
-    background-color: #F5F5F5;
+body {
+    background-color: #E6EDF7;
 }
 
 section {
     display: flex;
+    margin: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+    background-color: #3E7EBB;
 }
 
 #logo-text {
@@ -69,6 +78,7 @@ section {
 
 .content {
     width: 85vw;
-    border: 5px solid black;
+    border-left: 5px solid black;
+    padding-left: 20px;
 }
 
