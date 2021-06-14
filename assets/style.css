@@ -49,11 +49,26 @@ main {
     background-color: #F5F5F5;
 }
 
+section {
+    display: flex;
+}
+
 #logo-text {
     background-color: #222222;
     padding: 8px;
     font-weight: bold;
     color: #3E7EBB;
     font-size: 25px;
+}
+
+.section-text {
+    text-align: right;
+    padding-right: 10px;
+    width: 15vw;
+}
+
+.content {
+    width: 85vw;
+    border: 5px solid black;
 }
 
