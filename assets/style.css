@@ -93,6 +93,13 @@ footer {
     text-align: center;
 }
 
+#contact .content ul li a {
+    border-bottom: 3px solid #222222;
+    text-decoration: none;
+    padding: 3px;
+    color: #222222;
+}
+
 #card-1 {
     grid-area: thumb-1;
     background: url(./images/form_website_pic.JPG);
