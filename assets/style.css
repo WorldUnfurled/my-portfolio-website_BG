@@ -4,11 +4,18 @@
     font-family: 'Work Sans';
 }
 
+:root {
+    /* Color Vars*/
+    --mod-blue: #3E7EBB;
+    --dark-gray: #222222;
+    --mod-blue-rgba: rgba(62, 126, 187, 0.9);
+}
+
 nav {
     position: fixed;
     height: 8vh;
     width: 100%;
-    background-color: #3E7EBB;
+    background-color: var(--mod-blue);
     display: flex;
     align-items: center;
     top: 0;
@@ -32,11 +39,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #222222;
+    color: var(--dark-gray);
     text-decoration: none;
     border-left: 5px;
     border-right: 5px;
-    border-bottom: 3px solid #222222;
+    border-bottom: 3px solid var(--dark-gray);
     padding: 3px;
 }
 
@@ -63,15 +70,15 @@ footer {
     font-weight: bold;
     color: white;
     text-align: center;
-    background-color: #3E7EBB;
+    background-color: var(--mod-blue);
     padding: 20px;
 }
 
 #logo-text {
-    background-color: #222222;
+    background-color: var(--dark-gray);
     padding: 8px;
     font-weight: bold;
-    color: #3E7EBB;
+    color: var(--mod-blue);
     font-size: 25px;
 }
 
@@ -94,51 +101,45 @@ footer {
 }
 
 #contact .content ul li a {
-    border-bottom: 3px solid #222222;
+    border-bottom: 3px solid var(--dark-gray);
     text-decoration: none;
     padding: 3px;
-    color: #222222;
+    color: var(--dark-gray);
 }
 
 #card-1 {
     grid-area: thumb-1;
     background: url(./images/form_website_pic.JPG);
+    background-size: cover;
     background-position: center;
-    height: 300px;
-    border: 3px solid #3E7EBB;
 }
 
 #card-2 {
     grid-area: thumb-2;
     background: url(./images/hendricks.JPG);
+    background-size: cover;
     background-position: center;
-    height: 200px;
-    border: 3px solid #3E7EBB; 
 }
 
 #card-3 {
     grid-area: thumb-3;
     background: url(./images/portfolio.JPG);
+    background-size: cover;
     background-position: center;
-    height: 200px;
-    border: 3px solid #3E7EBB; 
 }
 
 #card-4 {
     grid-area: thumb-4;
     background: url(./images/mcu_timeline.JPG);
+    background-size: cover;
     background-position: center;
-    height: 200px;
-    border: 3px solid #3E7EBB; 
 }
 
 #card-5 {
     grid-area: thumb-5;
     background: url(./images/this.JPG);
-    background-position: center;
     background-size: cover;
-    height: 200px;
-    border: 3px solid #3E7EBB;
+    background-position: center;
 }
 
 #card-container {
@@ -157,7 +158,7 @@ footer {
     text-align: right;
     padding-right: 10px;
     width: 15vw;
-    font-size: 32px;
+    font-size: 34px;
 }
 
 .content {
@@ -166,15 +167,25 @@ footer {
     padding-left: 20px;
 }
 
-.card {
+.big-card {
+    height: 500px;
+    border: 3px solid var(--mod-blue);
+}
+
+.small-card {
+    height: 200px;
+    border: 3px solid var(--mod-blue);
+}
+
+.card-text {
     display: flex;
     align-items: flex-end;
 }
 
-.card p {
+.card-text p {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: rgba(62, 126, 187, 0.9);
+    background-color: var(--mod-blue-rgba);
     font-size: 15px;
 }
 
@@ -183,6 +194,6 @@ footer {
 }
 
 .resources {
-
+    font-size: 10px;
 }
 
