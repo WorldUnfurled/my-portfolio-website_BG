@@ -1,0 +1,9 @@
+nav {
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    background-color: #600FFF;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
