@@ -88,6 +88,11 @@ footer {
     margin-right: 30px;
 }
 
+#contact .content ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
 #card-1 {
     grid-area: thumb-1;
     background: url(./images/form_website_pic.JPG);
