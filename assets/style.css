@@ -171,11 +171,18 @@ footer {
     align-items: flex-end;
 }
 
-.card h3 {
+.card p {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #3E7EBB;
+    background-color: rgba(62, 126, 187, 0.9);
     font-size: 15px;
 }
 
+.project {
+    font-size: 20px;
+}
+
+.resources {
+
+}
 
