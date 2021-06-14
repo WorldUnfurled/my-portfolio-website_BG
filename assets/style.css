@@ -166,3 +166,16 @@ footer {
     padding-left: 20px;
 }
 
+.card {
+    display: flex;
+    align-items: flex-end;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #3E7EBB;
+    font-size: 15px;
+}
+
+
