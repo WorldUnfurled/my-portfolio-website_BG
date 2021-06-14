@@ -45,6 +45,10 @@ header {
     width: 100%;
 }
 
+main {
+    background-color: #F5F5F5;
+}
+
 #logo-text {
     background-color: #222222;
     padding: 8px;
