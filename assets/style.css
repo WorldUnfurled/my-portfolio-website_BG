@@ -106,12 +106,12 @@ footer {
 
 #card-container {
     display: grid;
-    grid-template-columns: 20vh 10vh 10vh 10vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "thumb-1 thumb-1 thumb-1 thumb-1"
-        "thumb-2 thumb-2 thumb-3 thumb-3"
-        "thumb-4 thumb-4 thumb-5 thumb-5";
+        "thumb-1 thumb-1"
+        "thumb-2 thumb-3"
+        "thumb-4 thumb-5";
     column-gap: 10px;
     row-gap: 10px;
 }
