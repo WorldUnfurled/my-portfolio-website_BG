@@ -7,3 +7,10 @@ nav {
     align-items: center;
     top: 0;
 }
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    margin-left: auto;
+}
