@@ -29,3 +29,8 @@ nav ul li a {
     text-decoration: none;
 }
 
+#logo-text {
+    background-color: aqua;
+    padding: 10px;
+}
+
