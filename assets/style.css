@@ -154,6 +154,10 @@ footer {
     row-gap: 10px;
 }
 
+#phone {
+    pointer-events: none;
+}
+
 .section-text {
     text-align: right;
     padding-right: 10px;
