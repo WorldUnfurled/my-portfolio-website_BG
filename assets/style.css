@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
 
-* {
+* { /* Sets font family for all text */
     font-family: 'Work Sans';
 }
 
-:root {
+:root { /* Log variables here */
     /* Color Vars*/
     --mod-blue: #3E7EBB;
     --dark-gray: #222222;
     --mod-blue-rgba: rgba(62, 126, 187, 0.9);
 }
 
-nav {
+nav { /* Fixes the header to top of screen, specifies dimensions and colors, and aligns contents to center vertically*/
     position: fixed;
     height: 8vh;
     width: 100%;
@@ -22,7 +22,7 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
+nav ul { /* Removes decoration from nav list, positions it, and makes it a row */
     display: flex;
     list-style-type: none;
     flex-direction: row;
@@ -30,16 +30,15 @@ nav ul {
     margin-right: 30px;
 }
 
-nav ul li {
+nav ul li { /* Specifies dimensions for each element and specifies the boldness of the font */
     padding: 20px;
     margin: 5px;
     border: 5px;
     font-weight: bold;
     font-size: 15px;
-    font-weight: bold;
 }
 
-nav ul li a {
+nav ul li a { /* Specifies dimensions of text links themselves, colors them, and turns off text decoration; Colors bottom border for a designed underline */
     color: var(--dark-gray);
     text-decoration: none;
     border-left: 5px;
@@ -48,7 +47,7 @@ nav ul li a {
     padding: 3px;
 }
 
-header {
+header { /* Displays header image, specifies dimensions and positioning, and keeps it from tiling */
     background: url(./images/white-trees.jpg);
     background-position: center;
     height: 25vh;
@@ -56,18 +55,18 @@ header {
     background-size: cover;
 }
 
-body {
+body { /* Specifies body background-color */
     background-color: #E6EDF7;
 }
 
-section {
+section { /* Makes each section its own flex container, specifies margin, and makes text black and bold */
     display: flex;
     margin: 30px 60px 30px 30px;
     color: black;
     font-weight: bold;
 }
 
-footer {
+footer { /* Uses same blue as nav bar with white, bold, centered text and specifies padding */
     font-weight: bold;
     color: white;
     text-align: center;
@@ -75,7 +74,7 @@ footer {
     padding: 20px;
 }
 
-#logo-text {
+#logo-text { /* Puts designed rectangle around logo text and makes text itself big, bold, and blue*/
     background-color: var(--dark-gray);
     padding: 8px;
     font-weight: bold;
@@ -83,12 +82,12 @@ footer {
     font-size: 25px;
 }
 
-#contact .content{
+#contact .content{ /* Aligns items vertically to the center */
     align-items: center;
     padding: 30px 0 30px 20px;
 }
 
-#contact .content ul {
+#contact .content ul { /* Puts undecorated Contact list elements in a row and specifies positioning */
     display: flex;
     list-style-type: none;
     flex-direction: row;
@@ -96,18 +95,19 @@ footer {
     margin-right: 30px;
 }
 
-#contact .content ul li {
+#contact .content ul li { /* Spaces Contact list items evenly and centers them in their respective boxes */
     flex-grow: 1;
     text-align: center;
 }
 
-#contact .content ul li a {
+#contact .content ul li a { /* Gives each of the Contact links a solid gray underline replacing the default one and specifies dimensions and text color */
     border-bottom: 3px solid var(--dark-gray);
     text-decoration: none;
     padding: 3px;
     color: var(--dark-gray);
 }
 
+/* CARD SECTION: Each card is assigned to a grid area in the template and has an image background that is centered and does not tile (could probably be done in less lines with JS?)*/
 #card-1 {
     grid-area: thumb-1;
     background: url(./images/form_website_pic.JPG);
@@ -143,6 +143,7 @@ footer {
     background-position: center;
 }
 
+/* CARD CONTAINER: Specifies template for grid which determines how cards will be laid out; Specifies gaps in between the cards and makes cards adjacent to one another 50% of the size of the 100% big card (thumb-1) */
 #card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,63 +156,63 @@ footer {
     row-gap: 10px;
 }
 
-#phone {
+#phone { /* Allows cursor to stay the same when rolling over the phone number link in Contact */
     pointer-events: none;
 }
 
-.section-text {
+.section-text { /* Specifies positioning, dimensions, and font size for left side large text of sections */
     text-align: right;
     padding-right: 10px;
     width: 15vw;
     font-size: 34px;
 }
 
-.content {
+.content { /* Gives left border to main section content to drive a vertical bar between it and the large text; specifies dimensions of content */
     width: 85vw;
     border-left: 5px solid black;
     padding-left: 20px;
 }
 
-.big-card {
+.big-card { /* Dimension and border specifications for large card */
     height: 500px;
     border: 3px solid var(--mod-blue);
     filter: brightness(50%);
     transition: 0.5s;
 }
 
-.big-card:hover {
+.big-card:hover { /* Brightens big card on hover */
     filter: brightness(100%);
     cursor: pointer;
 }
 
-.small-card {
+.small-card { /* Dimension and border specifications for small cards */
     height: 200px;
     border: 3px solid var(--mod-blue);
     filter: brightness(50%);
     transition: 0.5s;
 }
 
-.small-card:hover {
+.small-card:hover { /* Brightens small cards on hover */
     filter: brightness(100%);
     cursor: pointer;
 }
 
-.card-text {
+.card-text { /* Card text in card container flexed and moved to cross axis end */
     display: flex;
     align-items: flex-end;
 }
 
-.card-text p {
+.card-text p { /* Specifies dimensions, font size, and background color for actual card text */
     margin-bottom: 20px;
     padding: 10px;
     background-color: var(--mod-blue-rgba);
     font-size: 15px;
 }
 
-.project {
+.project { /* Specifies project text span font size */
     font-size: 20px;
 }
 
-.resources {
+.resources { /* Specifies resources text span font size */
     font-size: 10px;
 }
