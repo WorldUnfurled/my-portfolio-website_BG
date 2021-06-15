@@ -40,7 +40,7 @@ nav ul li { /* Specifies dimensions for each element and specifies the boldness 
     font-size: 15px;
 }
 
-nav ul li a { /* Specifies dimensions of text links themselves, colors them, and turns off text decoration; Colors bottom border for a designed underline */
+nav ul li a { /* Specifies dimensions of nav text links themselves, colors them, and turns off text decoration; Colors bottom border for a designed underline */
     color: var(--dark-gray);
     text-decoration: none;
     border-left: 5px;
@@ -97,7 +97,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     font-size: 25px;
 }
 
-#contact .content{ /* Aligns items vertically to the center */
+#contact .content { /* Aligns items vertically to the center */
     align-items: center;
     padding: 30px 0 30px 20px;
 }
@@ -387,4 +387,46 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
 
 .resources { /* Specifies resources text span font size */
     font-size: 10px;
+}
+
+/* MEDIA QUERIES */
+/*----- 1230px -----*/
+@media (max-width: 1230px) {
+    #contact .content { /* Changes contact to only have left padding */
+        padding: 0;
+        padding-left: 20px;
+    }
+    
+    #contact .content ul { /* Changes Contact links to be one column */
+        flex-direction: column;
+    }
+
+    #contact .content ul li { /* Spaces list items vertically */
+        padding-bottom: 10px;
+    }
+}
+
+/*----- 1160px -----*/
+@media (max-width: 1160px) { 
+    .section-text { /* Changes font size of section large text */
+        font-size: 20px;
+    }
+}
+
+/*----- 900px -----*/
+@media (max-width: 900px) {
+    .project { /* Changes font size of project caption*/
+        font-size: 15px;
+    }
+}
+
+/*----- 800px -----*/
+@media (max-width: 800px) {
+    #logo-text { /* Changes logo text font size */
+        font-size: 18px;
+    }
+    
+    nav ul li { /* Changes nav list item */
+        padding: 15px;
+    }
 }
