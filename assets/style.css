@@ -109,6 +109,7 @@ footer {
 
 #card-1 {
     grid-area: thumb-1;
+    background-color:rgba(0,0,0,1);
     background: url(./images/form_website_pic.JPG);
     background-size: cover;
     background-position: center;
