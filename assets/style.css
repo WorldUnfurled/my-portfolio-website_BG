@@ -11,6 +11,8 @@
     --mod-blue-rgba: rgba(62, 126, 187, 0.9);
 }
 
+/* ********** TAGS ********** */
+
 nav { /* Fixes the header to top of screen, specifies dimensions and colors, and aligns contents to center vertically*/
     position: fixed;
     height: 8vh;
@@ -74,6 +76,8 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     padding: 20px;
 }
 
+/* ********** IDs ********** */
+
 #logo-text { /* Puts designed rectangle around logo text and makes text itself big, bold, and blue*/
     background-color: var(--dark-gray);
     padding: 8px;
@@ -110,37 +114,26 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
 /* CARD SECTION: Each card is assigned to a grid area in the template and has an image background that is centered and does not tile (could probably be done in less lines with JS?)*/
 #card-1 {
     grid-area: thumb-1;
-    background: url(./images/form_website_pic.JPG);
-    background-size: cover;
-    background-position: center;
+    /* background: url(./images/form_website_pic.JPG); */
 }
 
 #card-2 {
     grid-area: thumb-2;
-    background: url(./images/hendricks.JPG);
-    background-size: cover;
-    background-position: center;
 }
 
 #card-3 {
     grid-area: thumb-3;
-    background: url(./images/portfolio.JPG);
-    background-size: cover;
-    background-position: center;
+    /* background: url(./images/portfolio.JPG); */
 }
 
 #card-4 {
     grid-area: thumb-4;
-    background: url(./images/mcu_timeline.JPG);
-    background-size: cover;
-    background-position: center;
+    /* background: url(./images/mcu_timeline.JPG); */
 }
 
 #card-5 {
     grid-area: thumb-5;
-    background: url(./images/this.JPG);
-    background-size: cover;
-    background-position: center;
+    /* background: url(./images/this.JPG); */
 }
 
 /* CARD CONTAINER: Specifies template for grid which determines how cards will be laid out; Specifies gaps in between the cards and makes cards adjacent to one another 50% of the size of the 100% big card (thumb-1) */
@@ -160,6 +153,8 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     pointer-events: none;
 }
 
+/* ********** CLASSES ********** */
+
 .section-text { /* Specifies positioning, dimensions, and font size for left side large text of sections */
     text-align: right;
     padding-right: 10px;
@@ -176,39 +171,200 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
 .big-card { /* Dimension and border specifications for large card */
     height: 500px;
     border: 3px solid var(--mod-blue);
-    filter: brightness(50%);
-    transition: 0.5s;
-}
-
-.big-card:hover { /* Brightens big card on hover */
-    filter: brightness(100%);
-    cursor: pointer;
 }
 
 .small-card { /* Dimension and border specifications for small cards */
     height: 200px;
     border: 3px solid var(--mod-blue);
+}
+/* CARD CONTENT AND TRANSITIONS: 
+    ::BEFORE: Each card is given a empty content property, positioned, and dimensions and positioning are specified; Brightness is set to half on a background url and a transition is given for the hover element;
+
+    :HOVER::BEFORE: Changes the brightness to normal on hover;
+    
+    .CARD-CONTENT: Moves the card text in the container and positions the element in the correct flow; */
+/* CARD 1 */
+.card-content-1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/mcu_timeline.JPG);
+    background-size: cover;
+    background-position: center;
     filter: brightness(50%);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
-.small-card:hover { /* Brightens small cards on hover */
+.card-content-1:hover::before {
     filter: brightness(100%);
-    cursor: pointer;
 }
 
-.card-text { /* Card text in card container flexed and moved to cross axis end */
+.card-content-1 { /* Card text in card container flexed and moved to cross axis end */
+    position: relative;
     display: flex;
     align-items: flex-end;
 }
 
-.card-text p { /* Specifies dimensions, font size, and background color for actual card text */
+.card-content-1 p { /* Specifies dimensions, font size, and background color for actual card text */
+    position: relative;
     margin-bottom: 20px;
     padding: 10px;
     background-color: var(--mod-blue-rgba);
-    font-size: 15px;
 }
 
+/* CARD 2 */
+.card-content-2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/form_website_pic.JPG);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.card-content-2:hover::before {
+    filter: brightness(100%);
+}
+
+.card-content-2 { /* Card text in card container flexed and moved to cross axis end */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-content-2 p { /* Specifies dimensions, font size, and background color for actual card text */
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--mod-blue-rgba);
+}
+
+/* CARD 3 */
+.card-content-3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/form_website_pic.JPG);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.card-content-3:hover::before {
+    filter: brightness(100%);
+}
+
+.card-content-3 { /* Card text in card container flexed and moved to cross axis end */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-content-3 p { /* Specifies dimensions, font size, and background color for actual card text */
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--mod-blue-rgba);
+}
+
+/* CARD 4 */
+.card-content-4::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/form_website_pic.JPG);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.card-content-4:hover::before {
+    filter: brightness(100%);
+}
+
+.card-content-4 { /* Card text in card container flexed and moved to cross axis end */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-content-4 p { /* Specifies dimensions, font size, and background color for actual card text */
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--mod-blue-rgba);
+}
+
+/* CARD 5 */
+.card-content-5::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/form_website_pic.JPG);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.card-content-5:hover::before {
+    filter: brightness(100%);
+}
+
+.card-content-5 { /* Card text in card container flexed and moved to cross axis end */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-content-5 p { /* Specifies dimensions, font size, and background color for actual card text */
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--mod-blue-rgba);
+}
+
+/* CARD 6 */
+.card-content-6::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/form_website_pic.JPG);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.card-content-6:hover::before {
+    filter: brightness(100%);
+}
+
+.card-content-6 { /* Card text in card container flexed and moved to cross axis end */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-content-6 p { /* Specifies dimensions, font size, and background color for actual card text */
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--mod-blue-rgba);
+}
+/* CARD CONTENT END ----------------------------------------------------------------------------------------------- */
+
+/* CARD TEXT */
 .project { /* Specifies project text span font size */
     font-size: 20px;
 }
