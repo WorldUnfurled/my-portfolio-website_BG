@@ -78,18 +78,5 @@ _Media Queries_
 * 800px: Logo font size and nav list padding are made smaller
 ## LINKS
 
-## SUMMARY
-Lord knows I worked too hard on this :P Next is a (good?) game of League of Legends!
-
-* HTML flows semantically
-* HTML includes navbar and header which serve as an introduction to the page
-* HTML includes main content which is composed of sections with headers on the left hand side of a vertical bar and content on the right
-* HTML sections are "About Me", "Work", and "Contact"
-* HTML "About Me" section includes biographical text
-* HTML "Work" section includes main content - images that link to portfolio projects
-* HTML "Contact" section includes links and info to get in contact with the dev - Brooks Gunn - ME
-* HTML footer contains my name and the year this was developed - 2021
-
-* CSS sections each seek to flow from top to bottom of page
 ## E-signature?
 Brooks Gunn
