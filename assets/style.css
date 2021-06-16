@@ -12,7 +12,7 @@
 }
 
 /* ********** TAGS ********** */
-
+/* NAV SECTION */
 nav { /* Fixes the header to top of screen, specifies dimensions and colors, and aligns contents to center vertically */
     position: fixed;
     height: 8vh;
@@ -49,6 +49,7 @@ nav ul li a { /* Specifies dimensions of nav text links themselves, colors them,
     padding: 3px;
 }
 
+/* HEADER SECTION */
 header { /* Specifies header image, specifies dimensions and positioning, and keeps it from tiling; Changes header element to flex and pushes content to bottom right corner */
     background: url(./images/white-trees.jpg);
     background-position: center;
@@ -69,14 +70,17 @@ header p { /* Specifies header paragraph dimensions, font-weight, and the backgr
     padding: 10px;
 }
 
+/* BODY */
 body { /* Specifies body background-color */
     background-color: #E6EDF7;
 }
 
+/* MAIN */
 main {
     margin-top: 8vh;
 }
 
+/*SECTIONS IN MAIN*/
 section { /* Makes each section its own flex container, specifies margin, and makes text black and bold */
     display: flex;
     margin: 30px 60px 30px 30px;
@@ -84,6 +88,7 @@ section { /* Makes each section its own flex container, specifies margin, and ma
     font-weight: bold;
 }
 
+/* FOOTER */
 footer { /* Uses same blue as nav bar with white, bold, centered text and specifies padding */
     font-weight: bold;
     color: white;
@@ -94,7 +99,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
 
 /* ********** IDs ********** */
 
-/* NAVBAR SECTION */
+/* NAV SECTION */
 #logo-text { /* Puts designed rectangle around logo text and makes text itself big, bold, and blue*/
     background-color: var(--dark-gray);
     padding: 8px;
@@ -113,32 +118,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     border-radius: 50%;
 }
 
-/* CARDS: Each card is assigned to a grid area in the template and has an image background that is centered and does not tile (could probably be done in less lines with JS?)*/
-#card-1 {
-    grid-area: thumb-1;
-    /* background: url(./images/form_website_pic.JPG); */
-}
-
-#card-2 {
-    grid-area: thumb-2;
-}
-
-#card-3 {
-    grid-area: thumb-3;
-    /* background: url(./images/portfolio.JPG); */
-}
-
-#card-4 {
-    grid-area: thumb-4;
-    /* background: url(./images/mcu_timeline.JPG); */
-}
-
-#card-5 {
-    grid-area: thumb-5;
-    /* background: url(./images/this.JPG); */
-}
-
-/* CARD CONTAINERS: Specifies template for grid which determines how cards will be laid out; Specifies gaps in between the cards and makes cards adjacent to one another 50% of the size of the 100% big card (thumb-1) */
+/* CARD CONTAINER: Specifies template for grid which determines how cards will be laid out; Specifies gaps in between the cards and makes cards adjacent to one another 50% of the size of the 100% big card (thumb-1) */
 #card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,8 +131,28 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     row-gap: 10px;
 }
 
-#contact .content { /* Aligns items vertically to the center */
-    align-items: center;
+/* CARDS: Each card is assigned to a grid area in the template and has an image background that is centered and does not tile (could probably be done in less lines with JS?)*/
+#card-1 {
+    grid-area: thumb-1;
+}
+
+#card-2 {
+    grid-area: thumb-2;
+}
+
+#card-3 {
+    grid-area: thumb-3;
+}
+
+#card-4 {
+    grid-area: thumb-4;
+}
+
+#card-5 {
+    grid-area: thumb-5;
+}
+/* CONTACT SECTION */
+#contact .content { /* Pads contact content */
     padding: 30px 0 30px 20px;
 }
 
@@ -176,12 +176,14 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     color: var(--dark-gray);
 }
 
+/* PHONE IN CONTACT*/
 #phone { /* Allows cursor to stay the same when rolling over the phone number link in Contact */
     pointer-events: none;
 }
 
 /* ********** CLASSES ********** */
 
+/* SECTION SECTION */
 .section-text { /* Specifies positioning, dimensions, and font size for left side large text of sections */
     text-align: right;
     padding-right: 10px;
@@ -359,36 +361,6 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
 }
 
 .card-content-5 p { /* Specifies dimensions, font size, and background color for actual card text */
-    position: relative;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: var(--mod-blue-rgba);
-}
-
-/* CARD 6 */
-.card-content-6::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(./images/form_website_pic.JPG);
-    background-size: cover;
-    background-position: center;
-    filter: brightness(50%);
-    transition: 0.3s;
-}
-
-.card-content-6:hover::before {
-    filter: brightness(100%);
-}
-
-.card-content-6 { /* Card text in card container flexed and moved to cross axis end */
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-}
-
-.card-content-6 p { /* Specifies dimensions, font size, and background color for actual card text */
     position: relative;
     margin-bottom: 20px;
     padding: 10px;
