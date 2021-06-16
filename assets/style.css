@@ -61,10 +61,6 @@ header { /* Specifies header image, specifies dimensions and positioning, and ke
     margin-top: 8vh;
 }
 
-main {
-    margin-top: 8vh;
-}
-
 header p { /* Specifies header paragraph dimensions, font-weight, and the background rectangle */
     background-color: var(--mod-blue);
     margin-bottom: 20px;
@@ -75,6 +71,10 @@ header p { /* Specifies header paragraph dimensions, font-weight, and the backgr
 
 body { /* Specifies body background-color */
     background-color: #E6EDF7;
+}
+
+main {
+    margin-top: 8vh;
 }
 
 section { /* Makes each section its own flex container, specifies margin, and makes text black and bold */
