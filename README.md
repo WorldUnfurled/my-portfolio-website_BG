@@ -27,7 +27,8 @@ Brooks Gunn's Portfolio Website
 * **Style**
 * CSS flows logically per section (set in CSS itself with comments)
 * For setup, a font is imported and all elements are given the font-family "Work Sans"; a root psuedo-class contains color variables that replace pallette colors
-* **TAGS**
+
+**TAGS**
 
 * _NAV SECTION_
 * The navbar is fixed
