@@ -107,7 +107,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     font-size: 25px;
 }
 
-#prof-pic {
+#prof-pic { /* Specifies profile picture dimensions, position, image and circular nature */
     height: 30px;
     width: 30px;
     background-image: url(./images/prof_pic.JPG);
