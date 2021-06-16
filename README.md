@@ -74,7 +74,6 @@ Brooks Gunn's Portfolio Website
 * I wanted this to be a link but I didn't want it to be clickable for... purposes.
 
 **CLASSES**
-
 * _SECTION SECTION_
 * Section text to the left of a vertical bar is made large and introductory
 * Content ton the right of a vertical bar is given dimension specifications
@@ -97,3 +96,5 @@ Brooks Gunn's Portfolio Website
 https://github.com/WorldUnfurled/my-portfolio-website_BG
 ## E-SIGNATURE?
 Brooks Gunn :)
+
+![screenshot](assets/images/portfolio_website_BG.png)
