@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap'); /* IMPORT: Work Sans font */
 
 * { /* Sets font family for all text */
     font-family: 'Work Sans';
@@ -13,7 +13,7 @@
 
 /* ********** TAGS ********** */
 
-nav { /* Fixes the header to top of screen, specifies dimensions and colors, and aligns contents to center vertically*/
+nav { /* Fixes the header to top of screen, specifies dimensions and colors, and aligns contents to center vertically */
     position: fixed;
     height: 8vh;
     width: 100%;
@@ -22,11 +22,6 @@ nav { /* Fixes the header to top of screen, specifies dimensions and colors, and
     align-items: center;
     top: 0;
     z-index: 1000;
-}
-
-nav img {
-    height: 20%;
-    width: 20%;
 }
 
 nav ul { /* Removes decoration from nav list, positions it, and makes it a row */
@@ -99,6 +94,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
 
 /* ********** IDs ********** */
 
+/* NAVBAR SECTION */
 #logo-text { /* Puts designed rectangle around logo text and makes text itself big, bold, and blue*/
     background-color: var(--dark-gray);
     padding: 8px;
@@ -117,7 +113,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     border-radius: 50%;
 }
 
-/* CARD SECTION: Each card is assigned to a grid area in the template and has an image background that is centered and does not tile (could probably be done in less lines with JS?)*/
+/* CARDS: Each card is assigned to a grid area in the template and has an image background that is centered and does not tile (could probably be done in less lines with JS?)*/
 #card-1 {
     grid-area: thumb-1;
     /* background: url(./images/form_website_pic.JPG); */
@@ -142,7 +138,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     /* background: url(./images/this.JPG); */
 }
 
-/* CARD CONTAINER: Specifies template for grid which determines how cards will be laid out; Specifies gaps in between the cards and makes cards adjacent to one another 50% of the size of the 100% big card (thumb-1) */
+/* CARD CONTAINERS: Specifies template for grid which determines how cards will be laid out; Specifies gaps in between the cards and makes cards adjacent to one another 50% of the size of the 100% big card (thumb-1) */
 #card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
