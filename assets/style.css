@@ -58,6 +58,11 @@ header { /* Specifies header image, specifies dimensions and positioning, and ke
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    margin-top: 8vh;
+}
+
+main {
+    margin-top: 8vh;
 }
 
 header p { /* Specifies header paragraph dimensions, font-weight, and the background rectangle */
