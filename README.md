@@ -21,10 +21,10 @@ Brooks Gunn's Portfolio Website
 
 * Footer has my name and the year, 2021, at the bottom of the page
 ## CSS
-Reset
+* **Reset**
 * Reset file makes sure margin and padding are 0 by default
 
-Style
+* **Style**
 * CSS flows logically per section (set in CSS itself with comments)
 * For setup, a font is imported and all elements are given the font-family "Work Sans"; a root psuedo-class contains color variables that replace pallette colors
 * **TAGS**
@@ -85,10 +85,10 @@ Style
 * Card :hover::before elements turn the cursor into a pointer and maximize the brightness
 * Card content is flexed and pushes the blue background text captions to the bottom of the bottom left of the box; dimensions for the text are specified
 
-_CARD TEXT_
+* _CARD TEXT_
 * Project text is the first span in the paragraph text of the card caption element; it is given a bigger font than the resources span
 
-_MEDIA QUERIES_
+* _MEDIA QUERIES_
 * 1230px: Card content is changed to be a single column
 * 1160px: The large introductory text in each section is shrunken down
 * 900px: Project caption is shrunken down
