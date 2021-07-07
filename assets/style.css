@@ -218,7 +218,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(./images/mcu_timeline.JPG);
+    background-image: url(./images/coinbased.png);
     background-size: cover;
     background-position: center;
     filter: brightness(50%);
@@ -342,7 +342,7 @@ footer { /* Uses same blue as nav bar with white, bold, centered text and specif
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(./images/documentation_page.JPG);
+    background-image: url(./images/password_gen.PNG);
     background-size: cover;
     background-position: center;
     filter: brightness(50%);
